@@ -1,14 +1,18 @@
-
-
-
 #container{
-
+    display:flex;
+    width:100vh;
+    overflow-y:scroll;
+    height:80vh;
 }
 #left, #right{
-
+    flex-basis:20%;
+    border-radius:1px solid black;
 }
 #center{
-
+    border-radius:1px solid black;
+    flex-basis:60%;
+    display:flex;
+    flex-direction:column;
 }
 #contents{
     min-width:200px;
@@ -23,6 +27,7 @@
 }
 
 .contentbox{
+    border:1px solid blue;
     margin-top:1%;
     width:250px;height:220px;
     flex-direction:column;
@@ -32,8 +37,9 @@
     width:200px;height:400px;
 }
 .name{
-
+    background-color:beige;
 }
 .price{
+    background-color:blanchedalmond;
 
 }

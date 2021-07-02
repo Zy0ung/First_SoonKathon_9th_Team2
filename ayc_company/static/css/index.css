@@ -1,7 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap%27');
+
+* {margin:0; padding:0;box-sizing:border-box; font-family: 'Poppins';}
+ul li {list-style:none;}
+.clearfix:after{content:'';display:block; clear:both;text-decoration: none;}
+body {overflow-y:scroll;}
+header {	
+	background:linear-gradient(white 50px, rgba(255,255,255,0.5) 50px, rgba(255,255,255,0.5) );
+	height:50px; 
+	overflow:hidden;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav {width:96%; margin:0 auto;}
+nav > ul > li {float:left; line-height:50px; position: relative;}
+.main_title{
+    padding-left: 22%;
+    padding-right: 22%;
+    font-size:larger;
+    font-weight: bold;
+}
+
+.sub{
+    margin-left: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
 .main_photo img{
     width: 550px;
     height: 700px;
 }
 .main_photo{
     padding-left: 33%;
+}
+
+
+.slidebox img{width: 300px; height: 400px; padding-left: 10px;text-align: center;;}
+
+[name="slide"] {display:none;}
+.slidebox {max-width:100%;width:100%;margin:0; padding-top: 3%;text-align:center;}
+.slidebox img {max-width:100%;}
+.slidebox .slidelist {
+    white-space:nowrap;
+    font-size:0;
+    overflow:hidden;
+}
+.slidebox .slideitem {
+    position:relative;
+    display:inline-block;
+    vertical-align:middle;
+    width:100%;
+    transition: all.6s;
+}
+.slidebox .slideitem label {
+    position:absolute;
+    z-index:1;
+    top:50%;
+    transform:translateY(-50%);
+    padding:0;
+    border-radius:50%;
+    cursor:pointer;
+}
+label.left {
+    left:20px;
+    background-color:#5F5F5F;
+    background-position:center center;
+    background-size:50%;
+    background-repeat:no-repeat;
+}
+label.right {
+    right:20px;
+    background-color:#5F5F5F;
+    background-position:center center;
+    background-size:50%;
+    background-repeat:no-repeat;
+}
+
+/* 페이징 스타일 */
+.paginglist {text-align:center;padding:5px 0;}
+.paginglist > li {display:inline-block;vertical-align:middle;margin:0 5px;}
+.paginglist > li > label {display:block;padding:5px 5px;border-radius:10px;background:#ccc;cursor:pointer;}
+.paginglist > li:hover > label {background:#333;}
+
+[id="slide01"]:checked ~ .slidelist .slideitem {transform:translateX(0);animation:slide01 20s infinite;}
+[id="slide02"]:checked ~ .slidelist .slideitem {transform:translateX(-100%);animation:slide02 20s infinite;}
+[id="slide03"]:checked ~ .slidelist .slideitem {transform:translateX(-200%);animation:slide03 20s infinite;}
+[id="slide04"]:checked ~ .slidelist .slideitem {transform:translateX(-300%);animation:slide04 20s infinite;}
+
+@keyframes slide01 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:-100%;}
+    48% {left:-100%;}
+    50% {left:-200%;}
+    73% {left:-200%;}
+    75% {left:-300%;}
+    98% {left:-300%;}
+    100% {left:0%;}
+}
+@keyframes slide02 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:-100%;}
+    48% {left:-100%;}
+    50% {left:-200%;}
+    73% {left:-200%;}
+    75% {left:100%;}
+    98% {left:100%;}
+    100% {left:0%;}
+}
+@keyframes slide03 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:-100%;}
+    48% {left:-100%;}
+    50% {left:200%;}
+    73% {left:200%;}
+    75% {left:100%;}
+    98% {left:100%;}
+    100% {left:0%;}
+}
+@keyframes slide04 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:300%;}
+    48% {left:300%;}
+    50% {left:200%;}
+    73% {left:200%;}
+    75% {left:100%;}
+    98% {left:100%;}
+    100% {left:0%;}
+}
+
+.bottom{
+    display: flex;
+    text-align: center;
+}
+
+.bottom-sub{
+    padding-top: 3%;
+    padding-left: 10%;
 }
