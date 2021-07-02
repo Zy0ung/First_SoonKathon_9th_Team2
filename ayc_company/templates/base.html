@@ -12,16 +12,18 @@
     <header>
         <nav>
             <ul class="clearfix">
-                <li class="sub"><a href="{%block link%}{%endblock%}">shop</a></li>
+                <li class="sub"><a href="{%url 'list' %}">shop</a></li>
                 <li class="sub"><a href="#">notice</a></li>
                 <li class="sub"><a href="#">contact</a></li>
-                <li class="sub"><a href="{%block link%}{%endblock%}">post_jean</a></li>
-                <li class="main_title"><a href="{%block link%}{%endblock%}">ayoungcompany</a></li>
+                <li class="sub"><a href="{% url 'post_jean' %}">post_jean</a></li>
+                <li class="main_title"><a href="{% url 'index' %}">ayoungcompany</a></li>
                 <li class="sub"><a href="#">instagram</a></li>
                 <li class="sub"><a href="#">MyPage</a></li>
                 <li class="sub"><a href="#">sign In</a></li>
                 <li class="sub"><a href="#">cart</a></li>		
         </nav>
     </header>
+    {%block content%}
+    {%endblock%}
 </body>
 </html>
