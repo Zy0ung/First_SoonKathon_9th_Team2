@@ -2,26 +2,50 @@
 
 .detail_wrap {
     font-family: 'Poppins', sans-serif;
-    display: flex; flex-direction:row; margin: 30px; text-align: center;
+    display: flex; flex-direction:row; margin: 30px; 
+    margin-top: 100px;
 }
 .detail_side {
-    border: 1px solid black; 
+    border: 0px solid black; 
     width: 25%; 
     height: 100%; 
-    margin: 0 15px;
+    margin: 100px 30px;
+    text-align: left;
+    padding: 10px;
 }
 .detail_main {
-    border: 1px solid black; 
+    border: 0px solid black; 
     width: 50%; 
-    margin: 0 10px;
+    margin: 0 15px;
 }
 .detail_buy {
-    border: 1px solid black; 
+    text-align: center;
+    border: 0px solid black; 
     width: 25%; 
-    margin: 0 10px;
+    margin: 200px 10px;
 }
-.buy_button {
+.buy_button_buy {
     width: 300px;
     height: 50px;
-    margin-top: 20px;
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+}
+.buy_button_cart {
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    background-color: white;
+}
+.detail_size {
+    font-size: 90%;
+}
+.size {
+    margin: 10px;
+}
+.input {
+    margin:20px;
+    width: 300px;
+    height: 25px;
+
 }

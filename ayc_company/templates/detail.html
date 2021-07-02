@@ -5,9 +5,9 @@
 
 <div class="detail_wrap">
     <div class="detail_side">
-        STANDARD DAMAGED JEANS BLACK<br>
-        KRW 98,000<br>
-        KRW 88,200<br><br>
+        <p><strong>DAMAGED JEANS BLACK</strong></p><br>
+        <p><del>KRW 98,000</del></p>
+        <p>KRW 88,200</p><br>
 
         - COTTON 100%<br>
         - 12.5 OZ<br>
@@ -17,24 +17,26 @@
         - 5 POCKET<br>
         - STANDARD FIT<br><br>
 
-        SIZE GUIDE (단면/CM)<br><br>
+        <p>SIZE GUIDE (단면/CM)</p><br>
 
-        SIZE S<br>
-        허리 38.5 허벅지 31.5 밑위 29.5 밑단 22 총기장 105<br>
-        SIZE M<br>
-        허리 40 허벅지 32.5 밑위 30.5 밑단 22.5 총기장 106<br>
-        SIZE L<br>
-        허리 41.5 허벅지 33.5 밑위 31.5 밑단 23 총기장 107<br>
-        SIZE XL<br>
-        허리 43 허벅지 34.5 밑위 32.5 밑단 23.5 총기장 108<br><br>
+        <div class="detail_size">
+            SIZE S<br>
+            허리 38.5 허벅지 31.5 밑위 29.5 밑단 22 총기장 105<br>
+            SIZE M<br>
+            허리 40 허벅지 32.5 밑위 30.5 밑단 22.5 총기장 106<br>
+            SIZE L<br>
+            허리 41.5 허벅지 33.5 밑위 31.5 밑단 23 총기장 107<br>
+            SIZE XL<br>
+            허리 43 허벅지 34.5 밑위 32.5 밑단 23.5 총기장 108<br><br>
+            MODEL 177CM, 28INCH - SIZE S<br>
+        </div>
 
-        MODEL 177CM, 28INCH - SIZE S<br>
+        
     </div>
     <div class="detail_main">
-        <img src={% static 'image/detail_jean.jpg' %} width="80%">
+        <img src={% static 'image/detail_jean.jpg' %} width="90%">
     </div>
     <div class="detail_buy">
-        구매 칸
         <label class="size">-[필수] 옵션을 선택해주세요-<br>
             <select class="input" name= "jean-size"> 
                 <option value="" hidden><label class="title">[필수] 옵션을 선택해주세요<br>
@@ -45,8 +47,11 @@
         </select>
         <p>KRW 98,100</p><br>
         <a href="#">Size Guide | Shipping & Returns</a><br>
-        <button class="buy_button" id="button" type="submit" value="">Buy Now</button><br>
-        <button class="buy_button" id="button" type="submit" value="">Add To Cart</button>
+        <div>
+            <button class="buy_button_buy" id="button" type="submit" value="">Buy Now</button><br>
+            <button class="buy_button_cart" id="button" type="submit" value="">Add To Cart</button>
+        </div>
+       
     </div>
     
     </div>
