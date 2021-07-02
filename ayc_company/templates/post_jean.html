@@ -1,1 +1,14 @@
-post_jean 
+<div style="text-align:center">
+    <h1> Jean post </h1>
+
+        <form action="{% url 'post_jean' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <p> 이름 : <input type="text" name="name"></p>
+            <p> 가격 : <input type="text" name="price"></p>
+            <p> 재료 : <textarea name="material" cols="30" row="10"></textarea></p>
+            <p> 상세 설명 : <textarea name="detail" cols="30" row="10"></textarea></p>
+            <p> 이미지 : <input type="file" name="image"></p>
+            <button type="submit">submit</button>
+        </form>
+</div<
