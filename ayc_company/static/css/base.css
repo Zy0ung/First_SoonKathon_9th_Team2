@@ -2,12 +2,13 @@
 
 * {margin:0; padding:0;box-sizing:border-box; font-family: 'Poppins';}
 ul li {list-style:none;}
-.clearfix:after{content:'';display:block; clear:both;text-decoration: none;}
+.clearfix:after{content:'';display:block; clear:both;text-decoration: none; text-align: center;}
 body {overflow-y:scroll;}
 header {	
 	background:linear-gradient(white 50px, rgba(255,255,255,0.5) 50px, rgba(255,255,255,0.5) );
 	height:50px; 
 	overflow:hidden;
+    width: 100%;
 }
 a{
     text-decoration: none;
@@ -16,15 +17,17 @@ a{
 nav {width:100%; margin:0 auto;}
 nav > ul > li {float:left; line-height:50px; position: relative;}
 .main_title{
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 16%;
+    padding-right: 16%;
     font-size:larger;
     font-weight: bold;
+    text-align: center;
 }
 
 .sub{
-    margin-left: 5%;
+    margin-left: 3%;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 
 
