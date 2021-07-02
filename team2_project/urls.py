@@ -21,6 +21,7 @@ from ayc_company import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('post/', views.post_jean, name='post_jean'),
     path('', views.index, name='index'),
     path('list/', views.list, name='list'),
     path('detail/', views.detail, name='detail'),
