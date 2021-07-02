@@ -7,12 +7,12 @@ def index(request):
     return render(request, 'index.html')
 
 def list(request):
-    jeans = Jean.objects.all()
-    return render(request, 'list.html', {'jean':jeans})
+    jean = Jean.objects.all()
+    return render(request, 'list.html', {'jean':jean})
 
 def detail(request, id):
-    jeans=get_object_or_404(Jean, pk=id)
-    return render(request, 'detail.html', {'jean':jeans})
+    jean=get_object_or_404(Jean, pk=id)
+    return render(request, 'detail.html', {'jean':jean})
 
 def post_jean(request):
     if request.method=='POST':
