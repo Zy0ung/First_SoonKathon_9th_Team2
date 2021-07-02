@@ -1,12 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayc</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<div style="display: flex; flex-direction:row; margin: 30px; text-align: center;">
+    <div style="border: 1px solid black; width: 15%; height: 100%; margin: 0 10px;">
+        STANDARD DAMAGED JEANS BLACK<br>
+        KRW 98,000<br>
+        KRW 88,200<br><br>
+
+        - COTTON 100%<br>
+        - 12.5 OZ<br>
+        - CORE YARN<br>
+        - ZIP FLY<br>
+        - YKK BUTTON FROM JAPAN<br>
+        - 5 POCKET<br>
+        - STANDARD FIT<br><br>
+
+        SIZE GUIDE (단면/CM)<br><br>
+
+        SIZE S<br>
+        허리 38.5 허벅지 31.5 밑위 29.5 밑단 22 총기장 105<br>
+        SIZE M<br>
+        허리 40 허벅지 32.5 밑위 30.5 밑단 22.5 총기장 106<br>
+        SIZE L<br>
+        허리 41.5 허벅지 33.5 밑위 31.5 밑단 23 총기장 107<br>
+        SIZE XL<br>
+        허리 43 허벅지 34.5 밑위 32.5 밑단 23.5 총기장 108<br><br>
+
+        MODEL 177CM, 28INCH - SIZE S<br>
+    </div>
+    <div style="border: 1px solid black; width: 70%; margin: 0 10px;">
+        사진
+    </div>
+    <div style="border: 1px solid black; width: 15%; margin: 0 10px;">
+        구매 칸
+        <label class="size">-[필수] 옵션을 선택해주세요-<br>
+            <select class="input" name= "jean-size"> 
+                <option value="" hidden><label class="title">[필수] 옵션을 선택해주세요<br>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+        </select>
+    </div>
+</div>
+{% endblock content %}
+</body>
     <div style="display: flex; flex-direction:row; margin: 30px; text-align: center;">
         <div style="border: 1px solid black; width: 15%; height: 100%; margin: 0 10px;">
             STANDARD DAMAGED JEANS BLACK<br>
