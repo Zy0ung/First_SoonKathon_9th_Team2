@@ -11,11 +11,10 @@
             {% for j in jeans %}
                 <div class="contentbox">
                     {% if j.image %}
-                    <div class="image"><img class="img" src="{{j.image}}" alt="사진 등록 준비중" /></div> 
+                    <a href="{% url 'detail' j.id %}"><div class="image"><img class="img" src="{{j.image}}" alt="사진 등록 준비중" /></div></a>
                     {% endif %}
-                    <div class="name">{{j.name}}</div>
-                    <div class="price">{{j.price}}</div>
-                    <a href="{% url 'detail' b.id %}"> 자세히 보기 </a>
+                    <a href="{% url 'detail' j.id %}"><div class="name">{{j.name}}</div></a>
+                    <a href="{% url 'detail' j.id %}"><div class="price">{{j.price}}</div></a>
                 </div>
             {% endfor %}
         </div>
