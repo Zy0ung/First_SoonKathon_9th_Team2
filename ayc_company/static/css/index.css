@@ -9,23 +9,6 @@ header {
 	height:50px; 
 	overflow:hidden;
 }
-a{
-    text-decoration: none;
-    color: black;
-}
-nav {width:96%; margin:0 auto;}
-nav > ul > li {float:left; line-height:50px; position: relative;}
-.main_title{
-    padding-left: 22%;
-    padding-right: 22%;
-    font-size:larger;
-    font-weight: bold;
-}
-
-.sub{
-    margin-left: 30px;
-    font-family: 'Poppins', sans-serif;
-}
 
 .main_photo img{
     width: 550px;
