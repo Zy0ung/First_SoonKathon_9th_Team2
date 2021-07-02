@@ -18,6 +18,7 @@ def post_jean(request):
     if request.method=='POST':
         new_jean=Jean()
         new_jean.name=request.POST['name']
+        new_jean.pre_price=request.POST['pre_price']
         new_jean.price=request.POST['price']
         new_jean.material=request.POST['material']
         new_jean.image=request.FILES.get('image')
