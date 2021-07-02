@@ -1,13 +1,4 @@
-#container{
-    display:flex;
-    width:100vh;
-    overflow-y:scroll;
-    height:80vh;
-}
-#left, #right{
-    flex-basis:20%;
-    border-radius:1px solid black;
-}
+
 #center{
     border-radius:1px solid black;
     flex-basis:60%;
