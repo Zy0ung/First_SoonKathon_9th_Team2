@@ -9,7 +9,7 @@
         <div id="left"> left </div>
         <div id="center">
             <div id="contents">
-            {% for j in jeans %}
+            {% for j in jean %}
                 <div class="contentbox">
                     {% if j.image %}
                     <a href="{% url 'detail' j.id %}"><div class="image"><img class="img" src="{{j.image}}" alt="사진 등록 준비중" /></div></a>
