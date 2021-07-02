@@ -8,3 +8,6 @@ def list(request):
 
 def detail(request):
     return render(request, 'detail.html')
+
+def post_jean(request):
+    return render(request, 'post_jean.html')
