@@ -6,7 +6,7 @@
 {% block content %}
 
     <div id="container">
-        <div id="center"> </div>
+        <div id="center">
             <div id="contents">
             {% for j in jeans %}
                 <div class="contentbox">
@@ -17,7 +17,9 @@
                     <a href="{% url 'detail' j.id %}"><div class="price">{{j.price}}</div></a>
                 </div>
             {% endfor %}
+            </div>
         </div>
+    </div>
 
         <div id="right"> </div>
     
