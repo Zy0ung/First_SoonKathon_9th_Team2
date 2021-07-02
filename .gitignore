@@ -1,7 +1,7 @@
 
 # Created by https://www.toptal.com/developers/gitignore/api/django,python,database,venv
 # Edit at https://www.toptal.com/developers/gitignore?templates=django,python,database,venv
-
+myvenv
 ### Database ###
 *.accdb
 *.db
