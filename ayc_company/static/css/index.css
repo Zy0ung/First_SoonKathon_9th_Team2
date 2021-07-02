@@ -1,0 +1,39 @@
+
+
+
+#container{
+
+}
+#left, #right{
+
+}
+#center{
+
+}
+#contents{
+    min-width:200px;
+    background-color:rgb(243, 242, 242);
+    flex-basis:85%;
+    flex-flow:row wrap;
+    justify-content:space-around;
+    align-content:flex-start;
+    font-size:10px;
+    height:100vh;
+    overflow-y:scroll; 
+}
+
+.contentbox{
+    margin-top:1%;
+    width:250px;height:220px;
+    flex-direction:column;
+}
+
+.image{
+    width:200px;height:400px;
+}
+.name{
+
+}
+.price{
+
+}
