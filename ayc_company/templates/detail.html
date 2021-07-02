@@ -1,8 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block link %} {% static 'css/detail.css' %} {% endblock %}
 {% block content %}
-<div style="display: flex; flex-direction:row; margin: 30px; text-align: center;">
-    <div style="border: 1px solid black; width: 15%; height: 100%; margin: 0 10px;">
+
+<div class="detail_wrap">
+    <div class="detail_side">
         STANDARD DAMAGED JEANS BLACK<br>
         KRW 98,000<br>
         KRW 88,200<br><br>
@@ -28,10 +30,10 @@
 
         MODEL 177CM, 28INCH - SIZE S<br>
     </div>
-    <div style="border: 1px solid black; width: 70%; margin: 0 10px;">
-        사진
+    <div class="detail_main">
+        <img src={% static 'image/detail_jean.jpg' %} width="80%">
     </div>
-    <div style="border: 1px solid black; width: 15%; margin: 0 10px;">
+    <div class="detail_buy">
         구매 칸
         <label class="size">-[필수] 옵션을 선택해주세요-<br>
             <select class="input" name= "jean-size"> 
@@ -43,8 +45,8 @@
         </select>
         <p>KRW 98,100</p><br>
         <a href="#">Size Guide | Shipping & Returns</a><br>
-        <button id="button" type="submit" value="">Buy Now</button><br>
-        <button id="button" type="submit" value="">Add To Cart</button>
+        <button class="buy_button" id="button" type="submit" value="">Buy Now</button><br>
+        <button class="buy_button" id="button" type="submit" value="">Add To Cart</button>
     </div>
     
     </div>
