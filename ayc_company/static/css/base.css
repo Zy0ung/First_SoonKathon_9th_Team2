@@ -23,3 +23,14 @@ nav > ul > li {float:left; line-height:50px; position: relative;}
     margin-left: 30px;
     font-family: 'Poppins', sans-serif;
 }
+
+.bottom{
+    display: flex;
+    text-align: center;
+    margin-left: 3%;
+}
+
+.bottom-sub{
+    padding-top: 3%;
+    padding-left: 9%;
+}

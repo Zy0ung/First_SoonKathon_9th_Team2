@@ -132,13 +132,3 @@ label.right {
     98% {left:100%;}
     100% {left:0%;}
 }
-
-.bottom{
-    display: flex;
-    text-align: center;
-}
-
-.bottom-sub{
-    padding-top: 3%;
-    padding-left: 10%;
-}
