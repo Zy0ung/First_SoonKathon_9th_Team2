@@ -9,7 +9,7 @@
             {% for j in jean %}
                 <div class="contentbox">
                     {% if j.image %}
-                    <a href="{% url 'detail' j.id %}"><div class="image"><img class="img" src="{{j.image}}" alt="사진 등록 준비중" /></div></a>
+                    <a href="{% url 'detail' j.id %}"><div class="image"><img class="img" src="{{j.image.url}}" alt="사진 등록 준비중" /></div></a>
                     {% endif %}
                     <a href="{% url 'detail' j.id %}"><div class="name">{{j.name}}</div></a>
                     <a href="{% url 'detail' j.id %}"><div class="price">{{j.price}}</div></a>
