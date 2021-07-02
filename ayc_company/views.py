@@ -8,7 +8,7 @@ def index(request):
 
 def list(request):
     jeans = Jean.objects.all()
-    return render(request, 'home.html', {'jean':jeans})
+    return render(request, 'list.html', {'jean':jeans})
 
 def detail(request, id):
     jeans=get_object_or_404(Jean, pk=id)

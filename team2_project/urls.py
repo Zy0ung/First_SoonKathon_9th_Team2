@@ -21,8 +21,9 @@ from ayc_company import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('post/', views.post_jean, name='post_jean'),
     path('', views.index, name='index'),
+    path('post/', views.post_jean, name='post_jean'),
     path('list/', views.list, name='list'),
     path('detail/', views.detail, name='detail'),
+    path('<str:id>/', views.detail, name='detail'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
