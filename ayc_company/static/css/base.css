@@ -15,10 +15,9 @@ a{
 nav {width:96%; margin:0 auto;}
 nav > ul > li {float:left; line-height:50px; position: relative;}
 .main_title{
-    padding-left: 22%;
-    padding-right: 22%;
     font-size:larger;
     font-weight: bold;
+    text-align: center;
 }
 .sub{
     margin-left: 30px;
