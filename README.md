@@ -12,6 +12,6 @@
 19:00 - 01:00(6시간)
 처음인지라..진짜... 눈물광광...
 
-### MLU
+### UML
 ![그룹 1](https://user-images.githubusercontent.com/80839715/124301584-ff52e000-db9a-11eb-96ae-07db6866f399.jpg)
 
